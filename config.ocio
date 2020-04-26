@@ -24,18 +24,6 @@ roles:
   texture_paint: Utility - sRGB - Texture
 
 displays:
-  sRGB:
-    - !<View> {name: Standard, colorspace: sRGB}
-    - !<View> {name: Filmic, colorspace: Filmic sRGB}
-    - !<View> {name: Filmic Log, colorspace: Filmic Log}
-    - !<View> {name: Raw, colorspace: Raw}
-    - !<View> {name: False Color, colorspace: False Color}
-  XYZ:
-    - !<View> {name: Standard, colorspace: XYZ}
-    - !<View> {name: DCI, colorspace: dci_xyz}
-    - !<View> {name: Raw, colorspace: Raw}
-  None:
-    - !<View> {name: Standard, colorspace: Raw}
   ACES:
     - !<View> {name: sRGB, colorspace: Output - sRGB}
     - !<View> {name: DCDM, colorspace: Output - DCDM}
@@ -52,8 +40,20 @@ displays:
     - !<View> {name: sRGB D60 sim., colorspace: Output - sRGB (D60 sim.)}
     - !<View> {name: Raw, colorspace: Utility - Raw}
     - !<View> {name: Log, colorspace: Input - ADX - ADX10}
+  sRGB:
+    - !<View> {name: Standard, colorspace: sRGB}
+    - !<View> {name: Filmic, colorspace: Filmic sRGB}
+    - !<View> {name: Filmic Log, colorspace: Filmic Log}
+    - !<View> {name: Raw, colorspace: Raw}
+    - !<View> {name: False Color, colorspace: False Color}
+  XYZ:
+    - !<View> {name: Standard, colorspace: XYZ}
+    - !<View> {name: DCI, colorspace: dci_xyz}
+    - !<View> {name: Raw, colorspace: Raw}
+  None:
+    - !<View> {name: Standard, colorspace: Raw}
 
-active_displays: [sRGB, XYZ, None, ACES]
+active_displays: [ACES, sRGB, XYZ, None]
 active_views: [Standard, Filmic, Filmic Log, Raw, sRGB, DCDM, DCDM P3 gamut clip, P3-D60, P3-D60 ST2084 1000 nits, P3-D60 ST2084 2000 nits, P3-D60 ST2084 4000 nits, P3-DCI, Rec.2020, Rec.2020 ST2084 1000 nits, Rec.709, Rec.709 D60 sim., sRGB D60 sim., Log]
 
 colorspaces:
