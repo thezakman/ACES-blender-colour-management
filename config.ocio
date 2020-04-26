@@ -18,7 +18,7 @@ roles:
   compositing_log: Input - ADX - ADX10
   default: ACES - ACES2065-1
   matte_paint: Utility - sRGB - Texture
-  reference: Utility - Raw
+  reference: aces
   rendering: ACES - ACEScg
   scene_linear: ACES - ACEScg
   texture_paint: Utility - sRGB - Texture
