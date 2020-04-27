@@ -4,4 +4,7 @@
 # How to install.
 
 Copy the folders and OCIO config file into ../blender/version_number/datafiles/colormanagement/ and replace everything.
-Restart Blender and enjoy!
+
+# How to use.
+
+Pick "Utility - sRGB - Texture" for any colour textures; and "Non-Color" for normal maps, since this works best in Blender specifically.
