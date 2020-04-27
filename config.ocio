@@ -1,7 +1,7 @@
 ocio_profile_version: 1
 
-search_path: "luts:filmic"
-strictparsing: true
+search_path: "luts:filmic:aces"
+strictparsing: false
 luma: [0.2126, 0.7152, 0.0722]
 
 description: RRT version ut33
